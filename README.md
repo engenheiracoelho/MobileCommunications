@@ -47,7 +47,7 @@ A modulação FSK (Frequency Shift Keying) é baseada em alteração da frequên
 # Comunicações Móveis II
 A disciplina ainda está em execução, portanto os materiais ainda serão modificados.
 
-Verifique o diretório [COM II]() para experimentos e exemplos.
+Verifique o diretório [COM II](https://github.com/leticiacoelho/Comunicacoes-Moveis/tree/master/COMII) para experimentos e exemplos.
 
-* [Convolução cíclica]() - Convolução para domínio discreto.
+* [Convolução cíclica](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/COMII/convolucao_ciclica.m) - Convolução para domínio discreto.
 
