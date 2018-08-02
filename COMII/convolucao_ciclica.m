@@ -10,3 +10,8 @@ Y = fft(y)
 
 %Demonstra que a convolução não funciona no domínio discreto
 Y2 = H.*X
+
+conv_circ_entre_x_e_h = [-2 2]
+
+%Valor da convolução circular
+fft_conv = fft(conv_circ_entre_x_e_h)
