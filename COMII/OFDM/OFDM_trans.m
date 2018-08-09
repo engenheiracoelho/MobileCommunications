@@ -1,17 +1,19 @@
+% Question 1
+
 function [Xm] = OFDM_trans(x,N,u)
 
   % Transformando o vetor em matriz
   x_m = reshape(x,N,u)
   
   % Transformada inversa de Fourier
-  x_fft = ifft(Y)
+  x_fft = ifft(x_m)
   
   %Prefixo Cíclico (PC)
-    
-  % Transpõe as colunas para linhas, assim possibilita pegar o 'pedaço' do PC
-  x_trans = x_fft.'
-  % Recupera parte do PC correspondente ao tamanho u
   
-  % Reune Parte do PC com a informação total
+  % Recupera parte do PC correspondente ao tamanho u
+  x_popc = x_fft(N-u+1:N,:)
+  
+  % Concatena parte do PC com a informação total
+  Xm = [x_popc;x_fft]
   
 end
