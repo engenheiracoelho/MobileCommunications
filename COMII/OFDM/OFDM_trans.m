@@ -1,19 +1,22 @@
-% Question 1
+% Questão 1
 
-function [Xm] = OFDM_trans(x,N,u)
+function [x] = OFDM_trans(X,N,u)
 
   % Transformando o vetor em matriz
-  x_m = reshape(x,N,u)
+  X_m = reshape(X,N,u);
   
   % Transformada inversa de Fourier
-  x_fft = ifft(x_m)
+  X_fft = ifft(X_m);
   
   %Prefixo Cíclico (PC)
   
   % Recupera parte do PC correspondente ao tamanho u
-  x_popc = x_fft(N-u+1:N,:)
+  X_popc = X_fft(N-u+1:N,:);
   
   % Concatena parte do PC com a informação total
-  Xm = [x_popc;x_fft]
+  X_conc = [X_popc;X_fft];
   
+  % Realiza a conversão de paralelo para serial e efetua a transmissão
+  x = reshape(X_conc,1,[]);
+
 end
