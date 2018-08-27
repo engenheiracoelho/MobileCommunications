@@ -9,11 +9,10 @@ fc = 40000; % Modulação BPSK
 spc = 100;  % Número de amostras por chip
 spb = spc*N;% Taxa de amostras por bit
 Rb = 1000;	% Taxa de bits
-Rs = 1e6;	% Taxa de amostragem
 fa = Rb*spb;% Frequência de amostragem
 Tb = 1/Rb;  % Tempo de bit
-Ts = 1/Rs;  % Tempo de amostragem
-D = N*Tb;   % Duração
+Ta = 1/fa;  % Tempo de amostragem
+D = Nb*Tb;   % Duração
 M = 1e6;    % Número de amostras
 t = D*(0:(M-1))/M; % Vetor de tempo
 
@@ -41,6 +40,14 @@ st = ct_conc.*xt_k;
 sBPSK = Portadora .* st;
 
 figure(1)
-subplot(311);plot(t,xt_k);xlim([0 Tb]);title('x(t)');
-subplot(312);plot(t,ct_conc);xlim([0 Tb]);title('c(t)');
-subplot(313);plot(t,st);xlim([0 Tb]);title('s(t)');
+subplot(311);plot(t,xt_k);xlim([0 10*Tb]);ylim([-1.2 1.2]);title('x(t)');
+subplot(312);plot(t,ct_conc);xlim([0 10*Tb]);ylim([-1.2 1.2]);title('c(t)');
+subplot(313);plot(t,st);xlim([0 10*Tb]);ylim([-1.2 1.2]);title('s(t)');
+
+% Verificamos que o resultado está correto pois onde x(t)=-1 inverte c(t) 
+% para o sinal de saída s(t) e onde x(t)=-1 mantem c(t) para o sinal de 
+% saída s(t)
+
+figure(2)
+subplot(211);plot(t,xt_k);xlim([0 4*Tb]);ylim([-1.2 1.2]);title('x(t)');
+subplot(212);plot(t,sBPSK);xlim([0 4*Tb]);ylim([-1.2 1.2]);title('sBPSK');
