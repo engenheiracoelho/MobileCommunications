@@ -1,34 +1,34 @@
-# Comunicações Móveis
+# Mobile Communications
 
-Os experimentos foram realizados na disciplina de Comunicações móveis no curso de Engenharia de Telecomunicações do Instituto Federal de Santa Catarina - IFSC.
+The experiments were created in the discipline of Mobile Communications in the Telecommunications Engineering course of the Federal Institute of Santa Catarina - IFSC.
 
-Para executar os códigos foi utilizado o software Matlab.
+Matlab software was used to execute the codes.
 
-### Transmissão binária
+### Binary transmission
 
-Este experimento propôs simular uma transmissão binária com **modulação PCM**, para tal utilizou-se um som de coruja para a verificação dos parâmetros de Canal AWGN com SNR variando entre 0,5,10 e 100 e coeﬁciente k variando 3, 5 e 8; Utilize o arquivo [Own.wav](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/owl.wav) para executar o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/transmissao_binaria.m). Caso deseje maior aprofundamento teórico, verifique o [relatório de experimento](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/transmissao_binaria.pdf).
+This experiment proposed to simulate a binary transmission with **PCM modulation**. An owl sound was used to verify the AWGN channel parameters with SNR (ranging 0, 5, 10 and 100) and coefficient k (ranging 0, 5 and 8); Use the [Own.wav] file (https://github.com/leticiacoelho/MobileCommunications/blob/master/owl.wav) to run the [experimental code] (https://github.com/leticiacoelho/MobileCommunications/blob/master/binary_transmission.m). If you want further theoretical analysis, check the [experiment report] (https://github.com/leticiacoelho/MobileCommunications/blob/master/binary_transmission.pdf) (portuguese version).
 
 ### MPSK
 
-A modulação PSK (Phase Shift Keying) é baseada em alteração da fase, ou seja, o sinal digital altera a fase da portadora deslocando para transmissão da informação original.
+The Phase Shift Keying (PSK) modulation is based on phase change, the digital signal changes the carrier phase by shifting to transmitting the original information.
 
-* Experimento que utiliza uma sequência de informação com 10 bits, para gerar as formas dos sinais modulados em PSK. Verifique o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/ASK_PSK_FSK.m).
+* Experiment using a 10-bit information sequence to generate PSK modulated signal forms. Check the [experimental code] (https://github.com/leticiacoelho/Communicaciones-Moveis/blob/master/ASK_PSK_FSK.m).
 
-* Experimento que compara 16-PSK e 16-QAM considerando o aspecto de SNR (relação sinal ruído). Verifique o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/16PSK_16QAM.m).
+* Experiment comparing 16-PSK and 16-QAM considering the aspect of SNR (signal-to-noise ratio). Check the [experimental code] (https://github.com/leticiacoelho/Communicacoes-moveis/blob/master/16PSK_16QAM.m).
 
-* Experimento que compara MPSK, considerando os níveis de 2,4,8 e 16 para demonstrar o aspecto de SNR (relação sinal ruído). Verifique o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/MPSK.m).
+* Experiment comparing MPSK, considering levels of 2,4,8 and 16 to demonstrate the aspect of SNR (signal-to-noise ratio). Check the [experimental code] (https://github.com/leticiacoelho/Communicaciones-Moveis/blob/master/MPSK.m).
 
-O [relatório de experimento](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/ASK_MPSK_FSK_MQAM.pdf) apresenta os experimentos indicados acima.
+The [experiment report] (https://github.com/leticiacoelho/Communicacoes-Moveis/blob/master/ASK_MPSK_FSK_MQAM.pdf) presents the experiments indicated above.
 
 ### MQAM
 
-A modulação QAM (Quadrature Amplitude Modulation) é baseada em alteração da fase, amplitude e frequência do sinal, ou seja, o sinal digital altera essas características na portadora para transmissão da informação original.
+The Quadrature Amplitude Modulation (QAM) modulation is based on a change in the phase, amplitude and frequency of the signal,  the digital signal changes these characteristics in the carrier to transmit the original information.
 
-* Experimento que utiliza uma sequência de informação com 10 bits, para gerar as formas dos sinais modulados em QAM. Verifique o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/ASK_PSK_QAM.m).
+* Experiment using a 10-bit information sequence to generate the forms of the QAM modulated signals. Check the [experimental code] (https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/ASK_PSK_QAM.m).
 
-* Experimento que compara 16-PSK e 16-QAM considerando o aspecto de SNR (relação sinal ruído). Verifique o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/16PSK_16QAM.m).
+* Experiment comparing 16-PSK and 16-QAM considering the aspect of SNR (signal-to-noise ratio). Check the [experimental code] (https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/16PSK_16QAM.m).
 
-* Experimento que compara MQAM, para os níveis de 4, 16 e 64. Comparação realizada com relação a probabilidade de erro de símbolo e a SNR (relação sinal ruído). Verifique o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/MQAM.m).
+* Experiment that compares MQAM, for the levels of 4, 16 and 64. Comparison performed with respect to probability of symbol error and SNR (signal-to-noise ratio). Check the [experimental code] (https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/MQAM.m).
 
 * Experimento que simula um modulador/demodulador em quadratura utilizando 16-QAM, e demonstrando a representação complexa do sinal. Verifique o [código experimental](https://github.com/leticiacoelho/Comunicacoes-Moveis/blob/master/16QAM.m).
 
